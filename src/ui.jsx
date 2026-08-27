@@ -1,55 +1,92 @@
-export function Panel({ title, toolbar, children, className = '', pad = true }) {
+/* Shared hatch patterns — hatching always means "the part that isn't filled". */
+export function Hatch() {
   return (
-    <section className={`panel flex flex-col ${className}`}>
-      {(title || toolbar) && (
-        <header className="panel-head">
-          <span className="panel-title">{title}</span>
-          <div className="ml-auto flex items-center gap-1.5">{toolbar}</div>
-        </header>
-      )}
-      <div className={pad ? 'p-4 flex-1 min-h-0' : 'flex-1 min-h-0'}>{children}</div>
-    </section>
+    <svg width="0" height="0" style={{ position: 'absolute' }} aria-hidden>
+      <defs>
+        <pattern id="hatch" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+          <rect width="7" height="7" fill="#EDF1EF" />
+          <line x1="0" y1="0" x2="0" y2="7" stroke="#CBD8D1" strokeWidth="3.5" />
+        </pattern>
+        <pattern id="hatchWarn" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+          <rect width="7" height="7" fill="#FDF0DF" />
+          <line x1="0" y1="0" x2="0" y2="7" stroke="#EFCB9B" strokeWidth="3.5" />
+        </pattern>
+      </defs>
+    </svg>
   )
 }
 
-export function Chip({ tone = 'muted', children }) {
+export function Card({ children, className = '', dark = false }) {
+  return <section className={`${dark ? 'card-dark' : 'card'} ${className}`}>{children}</section>
+}
+
+export function CardHead({ title, sub, action }) {
+  return (
+    <header className="card-head">
+      <div className="min-w-0">
+        <h3 className="card-title truncate">{title}</h3>
+        {sub && <p className="card-sub truncate">{sub}</p>}
+      </div>
+      <div className="ml-auto flex items-center gap-1.5 shrink-0">{action}</div>
+    </header>
+  )
+}
+
+export function Pill({ tone = 'muted', children }) {
   const map = {
-    good: ['var(--color-good)', 'var(--color-good-bg)', 'var(--color-good-ring)'],
-    warn: ['var(--color-warn)', 'var(--color-warn-bg)', 'var(--color-warn-ring)'],
-    bad:  ['var(--color-bad)',  'var(--color-bad-bg)',  'var(--color-bad-ring)'],
-    muted:['var(--color-muted)','var(--color-surface-2)','var(--color-line)'],
+    good:  ['var(--color-good)', 'var(--color-good-bg)'],
+    warn:  ['var(--color-warn)', 'var(--color-warn-bg)'],
+    bad:   ['var(--color-bad)',  'var(--color-bad-bg)'],
+    muted: ['var(--color-muted)', 'var(--color-surface-2)'],
+    onDark:['#fff', 'rgba(255,255,255,.16)'],
   }
-  const [fg, bg, ring] = map[tone] || map.muted
-  return <span className="chip" style={{ color: fg, background: bg, borderColor: ring }}>{children}</span>
+  const [fg, bg] = map[tone] || map.muted
+  return <span className="pill" style={{ color: fg, background: bg }}>{children}</span>
 }
 
-export function Kpi({ label, value, unit, delta, tone = 'muted', note }) {
-  const color = tone === 'bad' ? 'var(--color-bad)' : tone === 'good' ? 'var(--color-good)' : 'var(--color-ink)'
+export function Stat({ label, value, unit, foot, pill, dark = false }) {
   return (
-    <div className="panel p-4">
+    <Card dark={dark} className="p-5 flex flex-col justify-between min-h-[132px]">
       <div className="flex items-start gap-2">
-        <span className="panel-title">{label}</span>
-        {delta && <span className="ml-auto">{delta}</span>}
+        <span className="text-[.86rem] font-semibold" style={{ color: dark ? 'rgba(255,255,255,.82)' : 'var(--color-ink)' }}>
+          {label}
+        </span>
+        <span className="ml-auto iconbtn" style={dark ? {
+          borderColor: 'rgba(255,255,255,.25)', background: 'transparent', color: '#fff'
+        } : undefined} aria-hidden>↗</span>
       </div>
-      <div className="display text-[2.1rem] font-bold mt-2 tnum" style={{ color }}>
-        {value}<span className="text-base ml-0.5 font-semibold">{unit}</span>
+      <div className="mt-3">
+        <div className="text-[2.55rem] font-extrabold leading-none tnum tracking-tight">
+          {value}<span className="text-[1.1rem] font-bold ml-0.5">{unit}</span>
+        </div>
+        <div className="flex items-center gap-1.5 mt-2 flex-wrap">
+          {pill}
+          {foot && (
+            <span className="text-[.72rem] font-medium"
+                  style={{ color: dark ? 'rgba(255,255,255,.66)' : 'var(--color-muted)' }}>
+              {foot}
+            </span>
+          )}
+        </div>
       </div>
-      {note && <p className="mono text-[10.5px] text-muted mt-1.5 leading-snug">{note}</p>}
-    </div>
+    </Card>
   )
 }
 
-export function ToolbarBtn({ active, children, ...p }) {
+export function Seg({ options, value, onChange }) {
   return (
-    <button {...p}
-      className="mono text-[10.5px] px-2 py-1 rounded border transition-colors"
-      style={{
-        borderColor: active ? 'var(--color-model)' : 'var(--color-line)',
-        background: active ? '#EEF2FF' : 'var(--color-surface)',
-        color: active ? 'var(--color-model)' : 'var(--color-muted)',
-      }}>
-      {children}
-    </button>
+    <div className="flex items-center gap-0.5 p-0.5 rounded-full" style={{ background: 'var(--color-surface-2)' }}>
+      {options.map(o => {
+        const on = o.value === value
+        return (
+          <button key={o.value} onClick={() => onChange(o.value)}
+            className="text-[.7rem] font-semibold px-2.5 py-1 rounded-full transition-colors"
+            style={{ background: on ? 'var(--color-brand-700)' : 'transparent', color: on ? '#fff' : 'var(--color-muted)' }}>
+            {o.label}
+          </button>
+        )
+      })}
+    </div>
   )
 }
 

@@ -3,7 +3,7 @@ import {
   ResponsiveContainer, ComposedChart, Line, Area, XAxis, YAxis, CartesianGrid, Tooltip,
   BarChart, Bar, Cell, ReferenceLine, LabelList
 } from 'recharts'
-import { Panel, Chip, Kpi, ToolbarBtn, Empty } from './ui.jsx'
+import { Card, CardHead, Pill, Stat, Seg, Empty } from './ui.jsx'
 import overall from './data/planningOverall.json'
 import depts from './data/planningDepts.json'
 import trend from './data/planningTrend.json'
@@ -40,8 +40,8 @@ export default function Planning() {
       {/* ── header strip ─────────────────────────────────────────── */}
       <div className="flex flex-wrap items-end gap-x-6 gap-y-2 mb-5">
         <div>
-          <div className="panel-title mb-1">Demand planning · forecast value add</div>
-          <h1 className="display text-2xl font-bold">Model vs seasonal-naive baseline</h1>
+          <div className="card-sub mb-1">Demand planning · forecast value add</div>
+          <h1 className="text-[1.75rem] font-extrabold tracking-tight leading-tight">Model vs seasonal-naive baseline</h1>
         </div>
         <div className="mono text-[11px] text-muted ml-auto flex flex-wrap gap-x-4 gap-y-1">
           <span>public M5 retail data</span>
@@ -53,28 +53,24 @@ export default function Planning() {
 
       {/* ── KPI row ──────────────────────────────────────────────── */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-3">
-        <Kpi label="Forecast accuracy" value={overall.fa} unit="%"
-             note="100 − WAPE, volume weighted" />
-        <Kpi label="Naive baseline" value={overall.naiveFa} unit="%"
-             note="Same weekday, one week earlier" />
-        <Kpi label="Forecast value add" value={sign(overall.fva)} unit="pp" tone="bad"
-             delta={<Chip tone="bad">below baseline</Chip>}
-             note={`Model loses on ${overall.total - overall.improved} of ${overall.total} departments`} />
-        <Kpi label="Bias" value={sign(overall.bias)} unit="%" tone="good"
-             delta={<Chip tone="good">within ±1pp</Chip>}
-             note="No systematic over- or under-forecast" />
+        <Stat label="Forecast accuracy" value={overall.fa} unit="%"
+             foot="100 − WAPE, volume weighted" />
+        <Stat label="Naive baseline" value={overall.naiveFa} unit="%"
+             foot="Same weekday, one week earlier" />
+        <Stat label="Forecast value add" value={sign(overall.fva)} unit="pp" tone="bad"
+             pill={<Pill tone="bad">below baseline</Pill>}
+             foot={`Model loses on ${overall.total - overall.improved} of ${overall.total} departments`} />
+        <Stat label="Bias" value={sign(overall.bias)} unit="%" tone="good"
+             pill={<Pill tone="good">within ±1pp</Pill>}
+             foot="No systematic over- or under-forecast" />
       </div>
 
       {/* ── main grid ────────────────────────────────────────────── */}
       <div className="grid lg:grid-cols-12 gap-3">
 
         {/* driver table */}
-        <Panel className="lg:col-span-5" title={`Departments · ${rows.length} of ${depts.length}`} pad={false}
-          toolbar={<>
-            <ToolbarBtn active={only === 'all'} onClick={() => setOnly('all')}>all</ToolbarBtn>
-            <ToolbarBtn active={only === 'losing'} onClick={() => setOnly('losing')}>losing</ToolbarBtn>
-            <ToolbarBtn active={only === 'winning'} onClick={() => setOnly('winning')}>winning</ToolbarBtn>
-          </>}>
+        <Card className="lg:col-span-5">
+<CardHead title={`Departments · ${rows.length} of ${depts.length}`} pad={false} action={<Seg value={only} onChange={setOnly} options={[{value:'all',label:'All'},{value:'losing',label:'Losing'},{value:'winning',label:'Winning'}]} />} />
           {rows.length === 0
             ? <Empty>No departments match this filter.<br />Clear it to see all {depts.length}.</Empty>
             : (
@@ -90,7 +86,7 @@ export default function Planning() {
                         <td className="tnum text-muted">{d.volume.toLocaleString()}</td>
                         <td className="tnum">{d.fa}%</td>
                         <td className="tnum text-muted">{d.naiveFa}%</td>
-                        <td><Chip tone={toneFor(d.fva)}>{sign(d.fva)}pp</Chip></td>
+                        <td><Pill tone={toneFor(d.fva)}>{sign(d.fva)}pp</Pill></td>
                         <td className="tnum text-muted">{sign(d.bias)}%</td>
                       </tr>
                     ))}
@@ -98,11 +94,11 @@ export default function Planning() {
                 </table>
               </div>
             )}
-        </Panel>
+        </Card>
 
         {/* FVA ranking */}
-        <Panel className="lg:col-span-7" title="Forecast value add by department · percentage points"
-          toolbar={<Chip tone="muted">negative = worse than naive</Chip>}>
+        <Card className="lg:col-span-7" title="Forecast value add by department · percentage points"
+          toolbar={<Pill tone="muted">negative = worse than naive</Pill>}>
           <div className="h-[300px]">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={depts} layout="vertical" margin={{ left: 4, right: 52, top: 4, bottom: 4 }}>
@@ -124,16 +120,11 @@ export default function Planning() {
               </BarChart>
             </ResponsiveContainer>
           </div>
-        </Panel>
+        </Card>
 
         {/* drill-down */}
-        <Panel className="lg:col-span-8"
-          title={`${sel} · actual vs model vs naive · trailing ${win} days`}
-          toolbar={<>
-            {[60, 90, 180].map(w => (
-              <ToolbarBtn key={w} active={win === w} onClick={() => setWin(w)}>{w}d</ToolbarBtn>
-            ))}
-          </>}>
+        <Card className="lg:col-span-8">
+<CardHead title={`${sel} · actual vs model vs naive · trailing ${win} days`} action={<Seg value={win} onChange={setWin} options={[60,90,180].map(v => ({ value: v, label: `${v}d` }))} />} />
           {drill.length === 0
             ? <Empty>No observations for {sel} in this window.</Empty>
             : (
@@ -149,21 +140,21 @@ export default function Planning() {
                           fill="var(--color-bad)" fillOpacity={0.1} />
                     <Line dataKey="naive" name="naive" stroke="var(--color-naive)" dot={false}
                           strokeWidth={1.25} strokeDasharray="3 3" />
-                    <Line dataKey="model" name="model" stroke="var(--color-model)" dot={false} strokeWidth={1.6} />
-                    <Line dataKey="actual" name="actual" stroke="var(--color-actual)" dot={false} strokeWidth={1.9} />
+                    <Line dataKey="model" name="model" stroke="var(--color-brand-500)" dot={false} strokeWidth={1.6} />
+                    <Line dataKey="actual" name="actual" stroke="var(--color-brand-900)" dot={false} strokeWidth={1.9} />
                   </ComposedChart>
                 </ResponsiveContainer>
               </div>
             )}
-        </Panel>
+        </Card>
 
         {/* verdict for selected dept */}
-        <Panel className="lg:col-span-4" title="Read-out">
+        <Card className="lg:col-span-4" title="Read-out">
           {!selRow ? <Empty>Select a department.</Empty> : (
             <div className="space-y-3 text-[13.5px] leading-relaxed">
               <div className="flex items-center gap-2">
                 <span className="mono font-semibold">{selRow.dept}</span>
-                <Chip tone={toneFor(selRow.fva)}>{sign(selRow.fva)}pp FVA</Chip>
+                <Pill tone={toneFor(selRow.fva)}>{sign(selRow.fva)}pp FVA</Pill>
               </div>
               <dl className="mono text-[11.5px] grid grid-cols-2 gap-y-1.5 text-muted">
                 <dt>accuracy</dt><dd className="text-ink text-right">{selRow.fa}%</dd>
@@ -178,11 +169,11 @@ export default function Planning() {
               </p>
             </div>
           )}
-        </Panel>
+        </Card>
 
         {/* weekly trend */}
-        <Panel className="lg:col-span-12" title="Weekly accuracy · model vs naive"
-          toolbar={<Chip tone="muted">weeks with ≥14 observations</Chip>}>
+        <Card className="lg:col-span-12" title="Weekly accuracy · model vs naive"
+          toolbar={<Pill tone="muted">weeks with ≥14 observations</Pill>}>
           <div className="h-[240px]">
             <ResponsiveContainer width="100%" height="100%">
               <ComposedChart data={trend} margin={{ top: 6, right: 12, bottom: 4, left: 0 }}>
@@ -194,11 +185,11 @@ export default function Planning() {
                 <Tooltip content={<Tip />} />
                 <Line dataKey="naiveFa" name="naive" stroke="var(--color-naive)" dot={false}
                       strokeWidth={1.4} strokeDasharray="4 3" />
-                <Line dataKey="fa" name="model" stroke="var(--color-model)" dot={false} strokeWidth={1.9} />
+                <Line dataKey="fa" name="model" stroke="var(--color-brand-500)" dot={false} strokeWidth={1.9} />
               </ComposedChart>
             </ResponsiveContainer>
           </div>
-        </Panel>
+        </Card>
       </div>
 
       <p className="mono text-[10.5px] text-muted mt-4 max-w-3xl leading-relaxed">
