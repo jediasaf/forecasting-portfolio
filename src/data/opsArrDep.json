@@ -1,0 +1,62 @@
+[
+ {
+  "month": "2010-01",
+  "arrivals": 46.1,
+  "departures": 43.8
+ },
+ {
+  "month": "2010-02",
+  "arrivals": 45.7,
+  "departures": 46.2
+ },
+ {
+  "month": "2010-03",
+  "arrivals": 46.2,
+  "departures": 46.6
+ },
+ {
+  "month": "2010-04",
+  "arrivals": 49.1,
+  "departures": 48.0
+ },
+ {
+  "month": "2010-05",
+  "arrivals": 55.5,
+  "departures": 58.0
+ },
+ {
+  "month": "2010-06",
+  "arrivals": 62.2,
+  "departures": 60.1
+ },
+ {
+  "month": "2010-07",
+  "arrivals": 59.9,
+  "departures": 58.8
+ },
+ {
+  "month": "2010-08",
+  "arrivals": 56.1,
+  "departures": 56.1
+ },
+ {
+  "month": "2010-09",
+  "arrivals": 56.2,
+  "departures": 56.3
+ },
+ {
+  "month": "2010-10",
+  "arrivals": 57.9,
+  "departures": 58.0
+ },
+ {
+  "month": "2010-11",
+  "arrivals": 58.1,
+  "departures": 60.2
+ },
+ {
+  "month": "2010-12",
+  "arrivals": 63.3,
+  "departures": 61.4
+ }
+]

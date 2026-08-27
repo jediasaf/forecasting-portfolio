@@ -1,0 +1,182 @@
+[
+ {
+  "terminal": "T1",
+  "month": "2010-01",
+  "lf": 45.2
+ },
+ {
+  "terminal": "T1",
+  "month": "2010-02",
+  "lf": 46.6
+ },
+ {
+  "terminal": "T1",
+  "month": "2010-03",
+  "lf": 47.7
+ },
+ {
+  "terminal": "T1",
+  "month": "2010-04",
+  "lf": 48.4
+ },
+ {
+  "terminal": "T1",
+  "month": "2010-05",
+  "lf": 54.1
+ },
+ {
+  "terminal": "T1",
+  "month": "2010-06",
+  "lf": 59.0
+ },
+ {
+  "terminal": "T1",
+  "month": "2010-07",
+  "lf": 58.0
+ },
+ {
+  "terminal": "T1",
+  "month": "2010-08",
+  "lf": 55.5
+ },
+ {
+  "terminal": "T1",
+  "month": "2010-09",
+  "lf": 55.3
+ },
+ {
+  "terminal": "T1",
+  "month": "2010-10",
+  "lf": 57.3
+ },
+ {
+  "terminal": "T1",
+  "month": "2010-11",
+  "lf": 57.4
+ },
+ {
+  "terminal": "T1",
+  "month": "2010-12",
+  "lf": 62.4
+ },
+ {
+  "terminal": "T2",
+  "month": "2010-01",
+  "lf": 40.1
+ },
+ {
+  "terminal": "T2",
+  "month": "2010-02",
+  "lf": 40.2
+ },
+ {
+  "terminal": "T2",
+  "month": "2010-03",
+  "lf": 40.5
+ },
+ {
+  "terminal": "T2",
+  "month": "2010-04",
+  "lf": 43.7
+ },
+ {
+  "terminal": "T2",
+  "month": "2010-05",
+  "lf": 56.4
+ },
+ {
+  "terminal": "T2",
+  "month": "2010-06",
+  "lf": 59.7
+ },
+ {
+  "terminal": "T2",
+  "month": "2010-07",
+  "lf": 56.6
+ },
+ {
+  "terminal": "T2",
+  "month": "2010-08",
+  "lf": 52.3
+ },
+ {
+  "terminal": "T2",
+  "month": "2010-09",
+  "lf": 52.0
+ },
+ {
+  "terminal": "T2",
+  "month": "2010-10",
+  "lf": 54.8
+ },
+ {
+  "terminal": "T2",
+  "month": "2010-11",
+  "lf": 57.7
+ },
+ {
+  "terminal": "T2",
+  "month": "2010-12",
+  "lf": 59.8
+ },
+ {
+  "terminal": "T3",
+  "month": "2010-01",
+  "lf": 51.9
+ },
+ {
+  "terminal": "T3",
+  "month": "2010-02",
+  "lf": 53.6
+ },
+ {
+  "terminal": "T3",
+  "month": "2010-03",
+  "lf": 53.4
+ },
+ {
+  "terminal": "T3",
+  "month": "2010-04",
+  "lf": 56.1
+ },
+ {
+  "terminal": "T3",
+  "month": "2010-05",
+  "lf": 60.9
+ },
+ {
+  "terminal": "T3",
+  "month": "2010-06",
+  "lf": 66.3
+ },
+ {
+  "terminal": "T3",
+  "month": "2010-07",
+  "lf": 65.0
+ },
+ {
+  "terminal": "T3",
+  "month": "2010-08",
+  "lf": 61.8
+ },
+ {
+  "terminal": "T3",
+  "month": "2010-09",
+  "lf": 63.0
+ },
+ {
+  "terminal": "T3",
+  "month": "2010-10",
+  "lf": 63.0
+ },
+ {
+  "terminal": "T3",
+  "month": "2010-11",
+  "lf": 63.7
+ },
+ {
+  "terminal": "T3",
+  "month": "2010-12",
+  "lf": 65.5
+ }
+]

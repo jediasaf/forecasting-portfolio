@@ -1,0 +1,37 @@
+[
+ {
+  "day": "Mon",
+  "lf": 54.9,
+  "flights": 33990
+ },
+ {
+  "day": "Tue",
+  "lf": 52.2,
+  "flights": 33492
+ },
+ {
+  "day": "Wed",
+  "lf": 51.8,
+  "flights": 34631
+ },
+ {
+  "day": "Thu",
+  "lf": 53.4,
+  "flights": 35349
+ },
+ {
+  "day": "Fri",
+  "lf": 54.9,
+  "flights": 34764
+ },
+ {
+  "day": "Sat",
+  "lf": 54.9,
+  "flights": 34406
+ },
+ {
+  "day": "Sun",
+  "lf": 57.0,
+  "flights": 33358
+ }
+]

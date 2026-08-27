@@ -1,6 +1,6 @@
 # Forecasting & Operations Research — portfolio
 
-Two working analyses, both built on public data, both reporting their own failure modes.
+Three working dashboards, all built on public data, all reporting their own failure modes.
 
 **Live:** deployed on Vercel · **Stack:** React, Vite, Tailwind, Recharts
 
@@ -55,3 +55,18 @@ files at build time, not restated from a report. No employer data, systems or de
 npm install
 npm run dev
 ```
+
+## 3. Operations — airport capacity utilisation
+
+240,000 flight movements across 3 terminals and 72 airlines, full year 2010.
+
+| | |
+|---|---|
+| Load factor | **54.2%** |
+| Passengers | 37.7M |
+| Empty seats flown | **31.9M** |
+| Seasonal swing | 17.5pp (44.9% Jan → 62.4% Dec) |
+
+Nearly half of all seats flown were unsold. T3 runs at 60.1% on the fewest movements while T2
+runs at 50.2% — about 10 points of utilisation between terminals, which is a scheduling and
+allocation question before it is a demand question.

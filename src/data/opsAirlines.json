@@ -1,0 +1,86 @@
+[
+ {
+  "airline": "SQ",
+  "lf": 56.3,
+  "flights": 69881,
+  "pax": 16049834,
+  "seats": 28524910
+ },
+ {
+  "airline": "1B",
+  "lf": 56.1,
+  "flights": 25903,
+  "pax": 2718802,
+  "seats": 4843013
+ },
+ {
+  "airline": "DH",
+  "lf": 47.3,
+  "flights": 7089,
+  "pax": 1473412,
+  "seats": 3115389
+ },
+ {
+  "airline": "VY",
+  "lf": 71.9,
+  "flights": 14216,
+  "pax": 2001993,
+  "seats": 2785755
+ },
+ {
+  "airline": "28",
+  "lf": 66.2,
+  "flights": 5545,
+  "pax": 1451413,
+  "seats": 2193324
+ },
+ {
+  "airline": "K5",
+  "lf": 33.0,
+  "flights": 6365,
+  "pax": 637069,
+  "seats": 1927746
+ },
+ {
+  "airline": "VO",
+  "lf": 69.6,
+  "flights": 10051,
+  "pax": 1323784,
+  "seats": 1902880
+ },
+ {
+  "airline": "NN",
+  "lf": 37.0,
+  "flights": 3551,
+  "pax": 578023,
+  "seats": 1560172
+ },
+ {
+  "airline": "X9",
+  "lf": 67.5,
+  "flights": 7859,
+  "pax": 950790,
+  "seats": 1409587
+ },
+ {
+  "airline": "84",
+  "lf": 56.6,
+  "flights": 3993,
+  "pax": 644123,
+  "seats": 1138090
+ },
+ {
+  "airline": "FD",
+  "lf": 53.2,
+  "flights": 5565,
+  "pax": 563541,
+  "seats": 1059202
+ },
+ {
+  "airline": "Z2",
+  "lf": 74.5,
+  "flights": 2979,
+  "pax": 775247,
+  "seats": 1040813
+ }
+]
