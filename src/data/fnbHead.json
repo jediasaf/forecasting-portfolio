@@ -1,0 +1,14 @@
+{
+ "tradingDays": 735,
+ "closedDays": 25,
+ "bills": 10007,
+ "gpm": 48.3,
+ "months": 25,
+ "peakDay": "Fri",
+ "peakIdx": 141.0,
+ "troughDay": "Mon",
+ "troughIdx": 79.3,
+ "paxEqBills": 27.0,
+ "from": "2024-07-02",
+ "to": "2026-07-30"
+}

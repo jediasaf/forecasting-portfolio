@@ -39,7 +39,7 @@ const cols = [
 
 export default function Backtest() {
   const [sorting, setSorting] = useState([{ id: 'prophetWape', desc: true }])
-  const [span, setSpan] = useState(270)
+  const [span, setSpan] = useState(90)
 
   const table = useReactTable({
     data: comparison, columns: cols, state: { sorting }, onSortingChange: setSorting,
@@ -90,13 +90,15 @@ export default function Backtest() {
                 <ComposedChart data={view} margin={{ top: 6, right: 10, bottom: 4, left: 0 }}>
                   <CartesianGrid stroke="var(--color-line)" vertical={false} />
                   <XAxis dataKey="date" tickFormatter={d => d.slice(5)} minTickGap={44}
-                         tick={{ fontSize: 10, fontFamily: 'IBM Plex Mono' }} stroke="var(--color-line)" />
-                  <YAxis tick={{ fontSize: 10, fontFamily: 'IBM Plex Mono' }} stroke="var(--color-line)" width={48} />
+                         tickLine={false} axisLine={false}
+                         tick={{ fontSize: 10, fontWeight: 600, fill: 'var(--color-muted)' }} />
+                  <YAxis tickLine={false} axisLine={false} width={44}
+                         tick={{ fontSize: 10, fill: 'var(--color-muted)' }} />
                   <Tooltip content={<Tip />} />
                   <Area dataKey="gapLo" stackId="g" stroke="none" fill="transparent" isAnimationActive={false} name="_" />
-                  <Area dataKey="gap" stackId="g" stroke="none" fill="var(--color-bad)" fillOpacity={0.14} name="abs error" />
-                  <Line dataKey="forecast" name="forecast" stroke="var(--color-brand-500)" dot={false}
-                        strokeWidth={1.5} strokeDasharray="4 3" />
+                  <Area dataKey="gap" stackId="g" stroke="none" fill="var(--color-bad)" fillOpacity={0.3} name="abs error" />
+                  <Line dataKey="forecast" name="forecast" stroke="var(--color-warn)" dot={false}
+                        strokeWidth={2} strokeDasharray="5 4" />
                   <Line dataKey="actual" name="actual" stroke="var(--color-brand-900)" dot={false} strokeWidth={1.9} />
                 </ComposedChart>
               </ResponsiveContainer>
@@ -140,7 +142,8 @@ export default function Backtest() {
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={comparison} layout="vertical" margin={{ left: 4, right: 44, top: 4, bottom: 4 }}>
                 <CartesianGrid stroke="var(--color-line)" horizontal={false} />
-                <XAxis type="number" unit="%" tick={{ fontSize: 10, fontFamily: 'IBM Plex Mono' }} stroke="var(--color-line)" />
+                <XAxis type="number" unit="%" tickLine={false} axisLine={false}
+                         tick={{ fontSize: 10, fontWeight: 600, fill: 'var(--color-muted)' }} />
                 <YAxis type="category" dataKey="dept" width={96}
                        tick={{ fontSize: 10.5, fontFamily: 'IBM Plex Mono' }} stroke="var(--color-line)" />
                 <Tooltip content={<Tip />} cursor={{ fill: 'var(--color-surface-2)' }} />
@@ -163,8 +166,10 @@ export default function Backtest() {
             <ResponsiveContainer width="100%" height="100%">
               <ComposedChart data={pareto} margin={{ top: 6, right: 12, bottom: 4, left: 0 }}>
                 <CartesianGrid stroke="var(--color-line)" vertical={false} />
-                <XAxis dataKey="itemsPct" unit="%" tick={{ fontSize: 10, fontFamily: 'IBM Plex Mono' }} stroke="var(--color-line)" />
-                <YAxis unit="%" width={46} tick={{ fontSize: 10, fontFamily: 'IBM Plex Mono' }} stroke="var(--color-line)" />
+                <XAxis dataKey="itemsPct" unit="%" tickLine={false} axisLine={false}
+                         tick={{ fontSize: 10, fontWeight: 600, fill: 'var(--color-muted)' }} />
+                <YAxis unit="%" width={46} tickLine={false} axisLine={false}
+                         tick={{ fontSize: 10, fontWeight: 600, fill: 'var(--color-muted)' }} />
                 <Tooltip content={<Tip />} />
                 <ReferenceLine x={20} stroke="var(--color-bad)" strokeDasharray="3 3" />
                 <Area dataKey="revenuePct" name="revenue captured" stroke="var(--color-brand-900)"

@@ -1,0 +1,44 @@
+[
+ {
+  "day": "Mon",
+  "index": 79.3,
+  "gpm": 48.8,
+  "days": 87
+ },
+ {
+  "day": "Tue",
+  "index": 94.7,
+  "gpm": 47.1,
+  "days": 109
+ },
+ {
+  "day": "Wed",
+  "index": 87.2,
+  "gpm": 47.6,
+  "days": 109
+ },
+ {
+  "day": "Thu",
+  "index": 102.9,
+  "gpm": 47.4,
+  "days": 109
+ },
+ {
+  "day": "Fri",
+  "index": 141.0,
+  "gpm": 49.8,
+  "days": 108
+ },
+ {
+  "day": "Sat",
+  "index": 110.1,
+  "gpm": 49.0,
+  "days": 108
+ },
+ {
+  "day": "Sun",
+  "index": 84.8,
+  "gpm": 47.3,
+  "days": 105
+ }
+]

@@ -4,11 +4,13 @@ import { Hatch } from './ui.jsx'
 import Backtest from './Backtest.jsx'
 import Planning from './Planning.jsx'
 import Operations from './Operations.jsx'
+import Fnb from './Fnb.jsx'
 
 const NAV = [
   { k: 'backtest',   label: 'Forecast backtest', icon: '◱', badge: '2.1k' },
   { k: 'planning',   label: 'Value add',         icon: '◧' },
   { k: 'operations', label: 'Operations',        icon: '◨' },
+  { k: 'fnb',        label: 'F&B trading',       icon: '◩' },
 ]
 
 function Sidebar({ view, setView, open, close }) {
@@ -35,7 +37,7 @@ function Sidebar({ view, setView, open, close }) {
             <button key={n.k} data-on={view === n.k ? '1' : '0'} className="navitem"
                     onClick={() => { setView(n.k); close() }}>
               <span className="text-[15px] leading-none opacity-70">{n.icon}</span>
-              <span className="truncate">{n.label}</span>
+              <span className="truncate flex-1">{n.label}</span>
               {n.badge && (
                 <span className="ml-auto text-[.62rem] font-bold px-1.5 py-0.5 rounded-md"
                       style={{ background: 'var(--color-brand-100)', color: 'var(--color-brand-900)' }}>
@@ -109,7 +111,7 @@ export default function App() {
         <motion.div key={view}
           initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}
           transition={{ duration: .3, ease: [.22, .61, .36, 1] }}>
-          {view === 'backtest' ? <Backtest /> : view === 'planning' ? <Planning /> : <Operations />}
+          {view === 'backtest' ? <Backtest /> : view === 'planning' ? <Planning /> : view === 'operations' ? <Operations /> : <Fnb />}
         </motion.div>
       </div>
     </div>

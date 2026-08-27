@@ -1,0 +1,152 @@
+[
+ {
+  "month": "2024-07",
+  "billsIdx": 91.8,
+  "salesIdx": 96.1,
+  "gpm": 52.9
+ },
+ {
+  "month": "2024-08",
+  "billsIdx": 92.1,
+  "salesIdx": 87.2,
+  "gpm": 52.4
+ },
+ {
+  "month": "2024-09",
+  "billsIdx": 88.1,
+  "salesIdx": 86.0,
+  "gpm": 51.8
+ },
+ {
+  "month": "2024-10",
+  "billsIdx": 87.3,
+  "salesIdx": 87.2,
+  "gpm": 52.0
+ },
+ {
+  "month": "2024-11",
+  "billsIdx": 98.6,
+  "salesIdx": 89.7,
+  "gpm": 52.1
+ },
+ {
+  "month": "2024-12",
+  "billsIdx": 92.1,
+  "salesIdx": 92.6,
+  "gpm": 50.3
+ },
+ {
+  "month": "2025-01",
+  "billsIdx": 81.3,
+  "salesIdx": 84.7,
+  "gpm": 53.9
+ },
+ {
+  "month": "2025-02",
+  "billsIdx": 83.5,
+  "salesIdx": 76.3,
+  "gpm": 50.6
+ },
+ {
+  "month": "2025-03",
+  "billsIdx": 89.9,
+  "salesIdx": 90.9,
+  "gpm": 49.8
+ },
+ {
+  "month": "2025-04",
+  "billsIdx": 96.0,
+  "salesIdx": 93.0,
+  "gpm": 50.5
+ },
+ {
+  "month": "2025-05",
+  "billsIdx": 92.7,
+  "salesIdx": 93.7,
+  "gpm": 50.1
+ },
+ {
+  "month": "2025-06",
+  "billsIdx": 98.5,
+  "salesIdx": 96.5,
+  "gpm": 52.1
+ },
+ {
+  "month": "2025-07",
+  "billsIdx": 108.4,
+  "salesIdx": 100.1,
+  "gpm": 50.7
+ },
+ {
+  "month": "2025-08",
+  "billsIdx": 108.6,
+  "salesIdx": 110.4,
+  "gpm": 43.5
+ },
+ {
+  "month": "2025-09",
+  "billsIdx": 112.0,
+  "salesIdx": 109.6,
+  "gpm": 43.8
+ },
+ {
+  "month": "2025-10",
+  "billsIdx": 105.7,
+  "salesIdx": 107.6,
+  "gpm": 45.3
+ },
+ {
+  "month": "2025-11",
+  "billsIdx": 102.6,
+  "salesIdx": 102.2,
+  "gpm": 45.9
+ },
+ {
+  "month": "2025-12",
+  "billsIdx": 95.3,
+  "salesIdx": 107.8,
+  "gpm": 47.7
+ },
+ {
+  "month": "2026-01",
+  "billsIdx": 101.2,
+  "salesIdx": 91.0,
+  "gpm": 44.2
+ },
+ {
+  "month": "2026-02",
+  "billsIdx": 113.9,
+  "salesIdx": 110.1,
+  "gpm": 46.0
+ },
+ {
+  "month": "2026-03",
+  "billsIdx": 124.0,
+  "salesIdx": 113.0,
+  "gpm": 48.6
+ },
+ {
+  "month": "2026-04",
+  "billsIdx": 113.7,
+  "salesIdx": 128.4,
+  "gpm": 47.0
+ },
+ {
+  "month": "2026-05",
+  "billsIdx": 113.8,
+  "salesIdx": 125.6,
+  "gpm": 44.3
+ },
+ {
+  "month": "2026-06",
+  "billsIdx": 116.6,
+  "salesIdx": 123.9,
+  "gpm": 46.5
+ },
+ {
+  "month": "2026-07",
+  "billsIdx": 92.5,
+  "salesIdx": 96.4,
+  "gpm": 45.4
+ }
+]

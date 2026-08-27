@@ -1,6 +1,6 @@
 # Forecasting & Operations Research — portfolio
 
-Three working dashboards, all built on public data, all reporting their own failure modes.
+Four working dashboards, all built on public data, all reporting their own failure modes.
 
 **Live:** deployed on Vercel · **Stack:** React, Vite, Tailwind, Recharts
 
@@ -70,3 +70,32 @@ npm run dev
 Nearly half of all seats flown were unsold. T3 runs at 60.1% on the fewest movements while T2
 runs at 50.2% — about 10 points of utilisation between terminals, which is a scheduling and
 allocation question before it is a demand question.
+
+## 4. Food & beverage trading
+
+735 trading days of point-of-sale data from an independent F&B operation.
+**All figures are indexed to internal averages or shown as percentages — no absolute
+revenue, cost or transaction values are published.**
+
+| | |
+|---|---|
+| Peak night | Friday, index **141** |
+| Quietest night | Monday, index **79** |
+| Gross margin | 48.3%, range 47.1–49.8% across the week |
+| Bills | 10,007 |
+
+Margin sits in a narrow band all week, so the weekly swing is a volume story rather than a
+mix story. Friday is both the busiest night and the strongest margin night, which is where
+roster and prep should follow.
+
+### A metric that looks usable and isn't
+
+The till exports a **Number of Pax** field, which would give revenue per head — the metric
+hospitality always wants. It does not survive inspection:
+
+- **27%** of trading days record pax exactly equal to bill count — one cover per bill, a default rather than a count
+- **10%** of days record *fewer* pax than bills, impossible if pax means covers
+- Correlation with bill count is only **0.66**
+
+Every figure is therefore built on bill count, which the till produces mechanically.
+Per-head metrics are not reported at all.

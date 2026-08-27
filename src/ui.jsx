@@ -46,7 +46,7 @@ export function Pill({ tone = 'muted', children }) {
 
 export function Stat({ label, value, unit, foot, pill, dark = false }) {
   return (
-    <Card dark={dark} className="p-5 flex flex-col justify-between min-h-[132px]">
+    <Card dark={dark} className="p-5 flex flex-col min-h-[142px]">
       <div className="flex items-start gap-2">
         <span className="text-[.86rem] font-semibold" style={{ color: dark ? 'rgba(255,255,255,.82)' : 'var(--color-ink)' }}>
           {label}
@@ -55,11 +55,11 @@ export function Stat({ label, value, unit, foot, pill, dark = false }) {
           borderColor: 'rgba(255,255,255,.25)', background: 'transparent', color: '#fff'
         } : undefined} aria-hidden>↗</span>
       </div>
-      <div className="mt-3">
+      <div className="mt-auto pt-3">
         <div className="text-[2.55rem] font-extrabold leading-none tnum tracking-tight">
           {value}<span className="text-[1.1rem] font-bold ml-0.5">{unit}</span>
         </div>
-        <div className="flex items-center gap-1.5 mt-2 flex-wrap">
+        <div className="flex items-center gap-1.5 mt-2 flex-wrap min-h-[20px]">
           {pill}
           {foot && (
             <span className="text-[.72rem] font-medium"
