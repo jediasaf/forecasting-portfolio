@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#F4F6F5"/>
+  <rect x="64" y="64" width="1072" height="502" rx="28" fill="#FFFFFF"/>
+  <rect x="64" y="64" width="360" height="502" rx="28" fill="#0B3D25"/>
+  <rect x="392" y="64" width="32" height="502" fill="#0B3D25"/>
+  <rect x="104" y="104" width="52" height="52" rx="14" fill="#2E9E62"/>
+  <text x="130" y="139" font-family="system-ui,sans-serif" font-size="22" font-weight="800" fill="#fff" text-anchor="middle">JT</text>
+  <text x="104" y="330" font-family="system-ui,sans-serif" font-size="46" font-weight="800" fill="#fff">Jedidiah</text>
+  <text x="104" y="382" font-family="system-ui,sans-serif" font-size="46" font-weight="800" fill="#fff">Tallulembang</text>
+  <text x="104" y="430" font-family="system-ui,sans-serif" font-size="20" font-weight="600" fill="#74C79A">Forecasting &amp; operations research</text>
+  <text x="472" y="168" font-family="system-ui,sans-serif" font-size="44" font-weight="800" fill="#12211A">Four dashboards.</text>
+  <text x="472" y="222" font-family="system-ui,sans-serif" font-size="44" font-weight="800" fill="#B3324C">Every failure mode reported.</text>
+  <g font-family="ui-monospace,monospace" font-size="19" fill="#7C8B84">
+    <text x="472" y="296">Forecast backtest      20.52% WAPE</text>
+    <text x="472" y="336">Forecast value add     −5.7pp vs naive</text>
+    <text x="472" y="376">Capacity utilisation   45.8% seats empty</text>
+    <text x="472" y="416">F&amp;B trading            index 141 peak</text>
+  </g>
+  <rect x="472" y="462" width="220" height="40" rx="20" fill="#DCF0E6"/>
+  <text x="582" y="488" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#0B3D25" text-anchor="middle">Public data only</text>
+</svg>

@@ -1,10 +1,14 @@
-import { useState } from 'react'
+import { useState, lazy, Suspense } from 'react'
 import { motion } from 'motion/react'
 import { Hatch } from './ui.jsx'
 import Backtest from './Backtest.jsx'
-import Planning from './Planning.jsx'
-import Operations from './Operations.jsx'
-import Fnb from './Fnb.jsx'
+const Planning   = lazy(() => import('./Planning.jsx'))
+const Operations = lazy(() => import('./Operations.jsx'))
+const Fnb        = lazy(() => import('./Fnb.jsx'))
+
+function Loading() {
+  return <div className="card p-8 text-center text-[13px]" style={{ color: 'var(--color-muted)' }}>Loading…</div>
+}
 
 const NAV = [
   { k: 'backtest',   label: 'Forecast backtest', icon: '◱', badge: '2.1k' },
@@ -111,7 +115,10 @@ export default function App() {
         <motion.div key={view}
           initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}
           transition={{ duration: .3, ease: [.22, .61, .36, 1] }}>
-          {view === 'backtest' ? <Backtest /> : view === 'planning' ? <Planning /> : view === 'operations' ? <Operations /> : <Fnb />}
+          <Suspense fallback={<Loading />}>
+            {view === 'backtest' ? <Backtest /> : view === 'planning' ? <Planning />
+              : view === 'operations' ? <Operations /> : <Fnb />}
+          </Suspense>
         </motion.div>
       </div>
     </div>
