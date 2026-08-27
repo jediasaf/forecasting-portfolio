@@ -1,0 +1,12 @@
+{
+  "mainPass": "37/37",
+  "mainModel": "claude-opus-5",
+  "mainQuestions": 37,
+  "hardPass": "13/14",
+  "hardTone": "warn",
+  "hardNote": "1 flag: a date cited as a number",
+  "meanCost": "$0.04",
+  "meanSeconds": "16.9",
+  "baselinePass": "6/14",
+  "baselineNote": "hard set: refuses what tools compute"
+}

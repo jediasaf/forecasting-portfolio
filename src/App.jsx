@@ -5,6 +5,7 @@ import Backtest from './Backtest.jsx'
 const Planning   = lazy(() => import('./Planning.jsx'))
 const Operations = lazy(() => import('./Operations.jsx'))
 const Fnb        = lazy(() => import('./Fnb.jsx'))
+const Agent      = lazy(() => import('./Agent.jsx'))
 
 function Loading() {
   return <div className="card p-8 text-center text-[13px]" style={{ color: 'var(--color-muted)' }}>Loading…</div>
@@ -15,6 +16,7 @@ const NAV = [
   { k: 'planning',   label: 'Value add',         icon: '◧' },
   { k: 'operations', label: 'Operations',        icon: '◨' },
   { k: 'fnb',        label: 'F&B trading',       icon: '◩' },
+  { k: 'agent',      label: 'Ask the forecast',  icon: '◈', badge: 'LLM' },
 ]
 
 function Sidebar({ view, setView, open, close }) {
@@ -117,7 +119,7 @@ export default function App() {
           transition={{ duration: .3, ease: [.22, .61, .36, 1] }}>
           <Suspense fallback={<Loading />}>
             {view === 'backtest' ? <Backtest /> : view === 'planning' ? <Planning />
-              : view === 'operations' ? <Operations /> : <Fnb />}
+              : view === 'operations' ? <Operations /> : view === 'agent' ? <Agent /> : <Fnb />}
           </Suspense>
         </motion.div>
       </div>
