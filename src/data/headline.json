@@ -1,0 +1,12 @@
+{
+ "prophetWape": 20.52,
+ "elasticWape": 5.46,
+ "predictions": 2142,
+ "depts": 7,
+ "folds": 3,
+ "skus": 3049,
+ "revenueCorr": 0.922,
+ "top20RevenuePct": 56.0,
+ "dateFrom": "2013-04-28",
+ "dateTo": "2014-01-22"
+}

@@ -1,0 +1,1622 @@
+[
+ {
+  "date": "2013-04-28",
+  "actual": 2555,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-04-29",
+  "actual": 1942,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-04-30",
+  "actual": 1702,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-01",
+  "actual": 1728,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-02",
+  "actual": 2015,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-03",
+  "actual": 2520,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-04",
+  "actual": 2828,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-05",
+  "actual": 2819,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-06",
+  "actual": 2118,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-07",
+  "actual": 1947,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-08",
+  "actual": 1734,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-09",
+  "actual": 1876,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-10",
+  "actual": 2174,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-11",
+  "actual": 3150,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-12",
+  "actual": 2507,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-13",
+  "actual": 1893,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-14",
+  "actual": 1717,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-15",
+  "actual": 1723,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-16",
+  "actual": 1787,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-17",
+  "actual": 2060,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-18",
+  "actual": 2299,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-19",
+  "actual": 2779,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-20",
+  "actual": 1967,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-21",
+  "actual": 1738,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-22",
+  "actual": 1675,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-23",
+  "actual": 1749,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-24",
+  "actual": 2152,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-25",
+  "actual": 2356,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-26",
+  "actual": 2230,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-27",
+  "actual": 2204,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-28",
+  "actual": 1647,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-29",
+  "actual": 1485,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-30",
+  "actual": 1701,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-05-31",
+  "actual": 2220,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-01",
+  "actual": 2943,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-02",
+  "actual": 2979,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-03",
+  "actual": 2103,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-04",
+  "actual": 1962,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-05",
+  "actual": 2102,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-06",
+  "actual": 1550,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-07",
+  "actual": 2462,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-08",
+  "actual": 2999,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-09",
+  "actual": 3117,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-10",
+  "actual": 2390,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-11",
+  "actual": 1914,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-12",
+  "actual": 1949,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-13",
+  "actual": 2042,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-14",
+  "actual": 2668,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-15",
+  "actual": 2938,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-16",
+  "actual": 2595,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-17",
+  "actual": 1949,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-18",
+  "actual": 1884,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-19",
+  "actual": 1604,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-20",
+  "actual": 1866,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-21",
+  "actual": 2570,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-22",
+  "actual": 2852,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-23",
+  "actual": 2739,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-24",
+  "actual": 1859,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-25",
+  "actual": 1616,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-26",
+  "actual": 1995,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-27",
+  "actual": 1990,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-28",
+  "actual": 2919,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-29",
+  "actual": 3217,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-06-30",
+  "actual": 3197,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-01",
+  "actual": 2848,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-02",
+  "actual": 2795,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-03",
+  "actual": 3053,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-04",
+  "actual": 2772,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-05",
+  "actual": 2780,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-06",
+  "actual": 2527,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-07",
+  "actual": 3221,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-08",
+  "actual": 2324,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-09",
+  "actual": 2211,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-10",
+  "actual": 2255,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-11",
+  "actual": 2092,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-12",
+  "actual": 2500,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-13",
+  "actual": 2719,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-14",
+  "actual": 3165,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-15",
+  "actual": 2055,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-16",
+  "actual": 1977,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-17",
+  "actual": 2051,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-18",
+  "actual": 2126,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-19",
+  "actual": 2348,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-20",
+  "actual": 2825,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-21",
+  "actual": 2958,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-22",
+  "actual": 1980,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-23",
+  "actual": 2026,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-24",
+  "actual": 1889,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-25",
+  "actual": 1907,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-26",
+  "actual": 2111,
+  "forecast": 2022.6,
+  "fold": 1
+ },
+ {
+  "date": "2013-07-27",
+  "actual": 2404,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-07-28",
+  "actual": 2817,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-07-29",
+  "actual": 1938,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-07-30",
+  "actual": 1879,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-07-31",
+  "actual": 1804,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-01",
+  "actual": 2223,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-02",
+  "actual": 2688,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-03",
+  "actual": 3020,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-04",
+  "actual": 2833,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-05",
+  "actual": 2479,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-06",
+  "actual": 2090,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-07",
+  "actual": 2450,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-08",
+  "actual": 2288,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-09",
+  "actual": 2669,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-10",
+  "actual": 3729,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-11",
+  "actual": 3718,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-12",
+  "actual": 2575,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-13",
+  "actual": 2136,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-14",
+  "actual": 2057,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-15",
+  "actual": 2457,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-16",
+  "actual": 2786,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-17",
+  "actual": 3141,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-18",
+  "actual": 3400,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-19",
+  "actual": 2344,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-20",
+  "actual": 1894,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-21",
+  "actual": 2305,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-22",
+  "actual": 2047,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-23",
+  "actual": 2332,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-24",
+  "actual": 3104,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-25",
+  "actual": 4042,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-26",
+  "actual": 2080,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-27",
+  "actual": 1914,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-28",
+  "actual": 1767,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-29",
+  "actual": 1903,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-30",
+  "actual": 2825,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-08-31",
+  "actual": 3737,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-01",
+  "actual": 3751,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-02",
+  "actual": 3485,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-03",
+  "actual": 2494,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-04",
+  "actual": 2282,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-05",
+  "actual": 2319,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-06",
+  "actual": 2795,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-07",
+  "actual": 3577,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-08",
+  "actual": 3960,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-09",
+  "actual": 2578,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-10",
+  "actual": 2230,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-11",
+  "actual": 2021,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-12",
+  "actual": 1997,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-13",
+  "actual": 2485,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-14",
+  "actual": 3132,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-15",
+  "actual": 3135,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-16",
+  "actual": 2204,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-17",
+  "actual": 2097,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-18",
+  "actual": 1900,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-19",
+  "actual": 1939,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-20",
+  "actual": 2410,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-21",
+  "actual": 3173,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-22",
+  "actual": 3583,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-23",
+  "actual": 2170,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-24",
+  "actual": 2010,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-25",
+  "actual": 1647,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-26",
+  "actual": 1821,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-27",
+  "actual": 2366,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-28",
+  "actual": 3341,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-29",
+  "actual": 3759,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-09-30",
+  "actual": 2452,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-01",
+  "actual": 2469,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-02",
+  "actual": 1816,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-03",
+  "actual": 2184,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-04",
+  "actual": 2533,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-05",
+  "actual": 3183,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-06",
+  "actual": 3398,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-07",
+  "actual": 2556,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-08",
+  "actual": 2375,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-09",
+  "actual": 2107,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-10",
+  "actual": 2333,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-11",
+  "actual": 2432,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-12",
+  "actual": 2723,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-13",
+  "actual": 3124,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-14",
+  "actual": 2159,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-15",
+  "actual": 1730,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-16",
+  "actual": 1681,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-17",
+  "actual": 1871,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-18",
+  "actual": 2202,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-19",
+  "actual": 2858,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-20",
+  "actual": 3175,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-21",
+  "actual": 2006,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-22",
+  "actual": 1790,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-23",
+  "actual": 1822,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-24",
+  "actual": 1636,
+  "forecast": 2497.5,
+  "fold": 2
+ },
+ {
+  "date": "2013-10-25",
+  "actual": 2156,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-10-26",
+  "actual": 2886,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-10-27",
+  "actual": 2923,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-10-28",
+  "actual": 2057,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-10-29",
+  "actual": 1786,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-10-30",
+  "actual": 1813,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-10-31",
+  "actual": 1539,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-01",
+  "actual": 2437,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-02",
+  "actual": 2824,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-03",
+  "actual": 3488,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-04",
+  "actual": 2171,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-05",
+  "actual": 2063,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-06",
+  "actual": 1986,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-07",
+  "actual": 1928,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-08",
+  "actual": 2199,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-09",
+  "actual": 2775,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-10",
+  "actual": 3174,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-11",
+  "actual": 2287,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-12",
+  "actual": 1651,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-13",
+  "actual": 1628,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-14",
+  "actual": 1776,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-15",
+  "actual": 1945,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-16",
+  "actual": 2808,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-17",
+  "actual": 2969,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-18",
+  "actual": 1930,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-19",
+  "actual": 1592,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-20",
+  "actual": 1638,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-21",
+  "actual": 1668,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-22",
+  "actual": 1971,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-23",
+  "actual": 2792,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-24",
+  "actual": 2918,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-25",
+  "actual": 2127,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-26",
+  "actual": 2287,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-27",
+  "actual": 2623,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-28",
+  "actual": 1552,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-29",
+  "actual": 1428,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-11-30",
+  "actual": 1719,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-01",
+  "actual": 2339,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-02",
+  "actual": 2517,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-03",
+  "actual": 2129,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-04",
+  "actual": 2071,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-05",
+  "actual": 1979,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-06",
+  "actual": 2298,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-07",
+  "actual": 3301,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-08",
+  "actual": 3005,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-09",
+  "actual": 2188,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-10",
+  "actual": 2487,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-11",
+  "actual": 1806,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-12",
+  "actual": 1760,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-13",
+  "actual": 1965,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-14",
+  "actual": 2687,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-15",
+  "actual": 2751,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-16",
+  "actual": 2118,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-17",
+  "actual": 1732,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-18",
+  "actual": 1755,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-19",
+  "actual": 1806,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-20",
+  "actual": 1862,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-21",
+  "actual": 2551,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-22",
+  "actual": 2657,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-23",
+  "actual": 2554,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-24",
+  "actual": 1835,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-25",
+  "actual": 0,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-26",
+  "actual": 1987,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-27",
+  "actual": 2110,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-28",
+  "actual": 2506,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-29",
+  "actual": 2301,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-30",
+  "actual": 2384,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2013-12-31",
+  "actual": 2574,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2014-01-01",
+  "actual": 1654,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2014-01-02",
+  "actual": 2309,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2014-01-03",
+  "actual": 2479,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2014-01-04",
+  "actual": 2824,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2014-01-05",
+  "actual": 3134,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2014-01-06",
+  "actual": 2340,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2014-01-07",
+  "actual": 2087,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2014-01-08",
+  "actual": 1928,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2014-01-09",
+  "actual": 1647,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2014-01-10",
+  "actual": 2106,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2014-01-11",
+  "actual": 3029,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2014-01-12",
+  "actual": 2940,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2014-01-13",
+  "actual": 2039,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2014-01-14",
+  "actual": 1691,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2014-01-15",
+  "actual": 1755,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2014-01-16",
+  "actual": 1718,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2014-01-17",
+  "actual": 2287,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2014-01-18",
+  "actual": 2941,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2014-01-19",
+  "actual": 2762,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2014-01-20",
+  "actual": 2048,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2014-01-21",
+  "actual": 1434,
+  "forecast": 2431.5,
+  "fold": 3
+ },
+ {
+  "date": "2014-01-22",
+  "actual": 1631,
+  "forecast": 2431.5,
+  "fold": 3
+ }
+]
