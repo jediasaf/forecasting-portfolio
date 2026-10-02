@@ -126,7 +126,7 @@ export default function Agent() {
               pill={<Pill tone="bad">{stats.baselineNote}</Pill>} />
       </div>
 
-      <div className="grid gap-3 lg:grid-cols-[280px_1fr]">
+      <div className="grid grid-cols-1 gap-3 lg:grid-cols-[280px_1fr]">
         {/* question picker */}
         <Card className="p-3 h-fit">
           <CardHead title="Ask the forecast" sub="recorded runs, replayed verbatim" />

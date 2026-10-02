@@ -66,7 +66,7 @@ export default function Planning() {
       </div>
 
       {/* ── main grid ────────────────────────────────────────────── */}
-      <div className="grid lg:grid-cols-12 gap-3">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-3">
 
         {/* driver table */}
         <Card className="lg:col-span-5">

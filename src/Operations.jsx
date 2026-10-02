@@ -83,7 +83,7 @@ export default function Operations() {
               foot={`${worst.lf}% to ${best.lf}%`} />
       </div>
 
-      <div className="grid lg:grid-cols-12 gap-3">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-3">
         <Card className="lg:col-span-8">
           <CardHead title="Load factor by month" sub="Bars show seats flown; line shows utilisation"
                     action={<Pill tone="muted">avg {head.lf}%</Pill>} />

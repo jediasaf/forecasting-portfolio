@@ -6,6 +6,8 @@ const Planning   = lazy(() => import('./Planning.jsx'))
 const Operations = lazy(() => import('./Operations.jsx'))
 const Fnb        = lazy(() => import('./Fnb.jsx'))
 const Agent      = lazy(() => import('./Agent.jsx'))
+const Foundry    = lazy(() => import('./Foundry.jsx'))
+const EvSiting   = lazy(() => import('./EvSiting.jsx'))
 
 function Loading() {
   return <div className="card p-8 text-center text-[13px]" style={{ color: 'var(--color-muted)' }}>Loading…</div>
@@ -17,6 +19,8 @@ const NAV = [
   { k: 'operations', label: 'Operations',        icon: '◨' },
   { k: 'fnb',        label: 'F&B trading',       icon: '◩' },
   { k: 'agent',      label: 'Ask the forecast',  icon: '◈', badge: 'LLM' },
+  { k: 'foundry',    label: 'Foundry',           icon: '◪' },
+  { k: 'evsiting',   label: 'EV siting',         icon: '◎', badge: 'new' },
 ]
 
 function Sidebar({ view, setView, open, close }) {
@@ -70,7 +74,7 @@ function Sidebar({ view, setView, open, close }) {
           <div className="relative">
             <p className="text-[.78rem] font-bold leading-snug">Every figure here is computed from data, not restated.</p>
             <p className="text-[.68rem] mt-1.5" style={{ color: 'rgba(255,255,255,.62)' }}>
-              Public datasets only.
+              No employer data. Sources stated per page.
             </p>
           </div>
         </div>
@@ -119,7 +123,8 @@ export default function App() {
           transition={{ duration: .3, ease: [.22, .61, .36, 1] }}>
           <Suspense fallback={<Loading />}>
             {view === 'backtest' ? <Backtest /> : view === 'planning' ? <Planning />
-              : view === 'operations' ? <Operations /> : view === 'agent' ? <Agent /> : <Fnb />}
+              : view === 'operations' ? <Operations /> : view === 'agent' ? <Agent />
+              : view === 'foundry' ? <Foundry /> : view === 'evsiting' ? <EvSiting /> : <Fnb />}
           </Suspense>
         </motion.div>
       </div>

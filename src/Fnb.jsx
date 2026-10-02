@@ -54,7 +54,7 @@ export default function Fnb() {
               foot="of days record pax = bill count exactly" />
       </div>
 
-      <div className="grid lg:grid-cols-12 gap-3">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-3">
         <Card className="lg:col-span-7">
           <CardHead title="Trade by night of week" sub="Bill volume indexed to the weekly average"
                     action={<Pill tone="muted">100 = average</Pill>} />

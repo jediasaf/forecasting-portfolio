@@ -77,7 +77,7 @@ export default function Backtest() {
              foot={`Of ${nf(head.skus)} SKUs, ranked by priority score`} />
       </div>
 
-      <div className="grid lg:grid-cols-12 gap-3">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-3">
         {/* signature: the residual band */}
         <Card className="lg:col-span-12">
 <CardHead title={`FOODS_3 · actual vs forecast · shaded band = absolute error`} action={<Seg value={span} onChange={setSpan}

@@ -1,0 +1,212 @@
+{
+ "summary": {
+  "rows": 51720,
+  "skus": 180,
+  "countries": 9,
+  "months": 20,
+  "wape_lag1": 0.1461,
+  "mean_mape": 0.1394,
+  "zero_demand_rows": 1784,
+  "total_rows_lag1": 17240
+ },
+ "behaviour": [
+  {
+   "behaviour": "new_launch",
+   "wape": 0.6072,
+   "bias": 0.6072,
+   "volume": 428303,
+   "rows": 840
+  },
+  {
+   "behaviour": "intermittent",
+   "wape": 0.4739,
+   "bias": 0.4739,
+   "volume": 1187344,
+   "rows": 2540
+  },
+  {
+   "behaviour": "eol",
+   "wape": 0.3598,
+   "bias": 0.3598,
+   "volume": 355893,
+   "rows": 1280
+  },
+  {
+   "behaviour": "trending_up",
+   "wape": 0.1211,
+   "bias": -0.1211,
+   "volume": 3017970,
+   "rows": 3140
+  },
+  {
+   "behaviour": "seasonal",
+   "wape": 0.0612,
+   "bias": 0.0418,
+   "volume": 3558825,
+   "rows": 3580
+  },
+  {
+   "behaviour": "stable",
+   "wape": 0.0499,
+   "bias": -0.0,
+   "volume": 2960775,
+   "rows": 5860
+  }
+ ],
+ "horizon": [
+  {
+   "horizon": "lag-1",
+   "wape": 0.1461
+  },
+  {
+   "horizon": "lag-2",
+   "wape": 0.1619
+  },
+  {
+   "horizon": "lag-3",
+   "wape": 0.1907
+  }
+ ],
+ "bu": [
+  {
+   "bu": "Power Supplies",
+   "wape": 0.2058,
+   "bias": 0.1732,
+   "volume": 1767866
+  },
+  {
+   "bu": "Industrial Controls",
+   "wape": 0.1607,
+   "bias": 0.0463,
+   "volume": 1883072
+  },
+  {
+   "bu": "Residential",
+   "wape": 0.1307,
+   "bias": 0.0244,
+   "volume": 2251549
+  },
+  {
+   "bu": "Backup Systems",
+   "wape": 0.129,
+   "bias": 0.0895,
+   "volume": 2132971
+  },
+  {
+   "bu": "Monitoring",
+   "wape": 0.1283,
+   "bias": 0.0272,
+   "volume": 3473652
+  }
+ ],
+ "drivers": [
+  {
+   "sku": "DIG-1044",
+   "family": "UPS",
+   "abc": "A",
+   "share": 0.0622,
+   "wape": 0.6086,
+   "bias": 0.6086,
+   "direction": "over"
+  },
+  {
+   "sku": "PWR-1063",
+   "family": "Meters",
+   "abc": "A",
+   "share": 0.0585,
+   "wape": 0.6111,
+   "bias": 0.6111,
+   "direction": "over"
+  },
+  {
+   "sku": "HOM-1005",
+   "family": "Breakers",
+   "abc": "A",
+   "share": 0.0566,
+   "wape": 0.4555,
+   "bias": 0.4555,
+   "direction": "over"
+  },
+  {
+   "sku": "IND-1097",
+   "family": "Enclosures",
+   "abc": "A",
+   "share": 0.0405,
+   "wape": 0.4571,
+   "bias": 0.4571,
+   "direction": "over"
+  },
+  {
+   "sku": "PWR-1012",
+   "family": "UPS",
+   "abc": "A",
+   "share": 0.0359,
+   "wape": 0.4553,
+   "bias": 0.4553,
+   "direction": "over"
+  },
+  {
+   "sku": "DIG-1131",
+   "family": "Breakers",
+   "abc": "A",
+   "share": 0.0334,
+   "wape": 0.1203,
+   "bias": -0.1203,
+   "direction": "under"
+  },
+  {
+   "sku": "IND-1142",
+   "family": "Meters",
+   "abc": "A",
+   "share": 0.0324,
+   "wape": 0.1259,
+   "bias": -0.1259,
+   "direction": "under"
+  },
+  {
+   "sku": "SEC-1116",
+   "family": "Breakers",
+   "abc": "A",
+   "share": 0.0317,
+   "wape": 0.4284,
+   "bias": 0.4284,
+   "direction": "over"
+  },
+  {
+   "sku": "DIG-1046",
+   "family": "Enclosures",
+   "abc": "A",
+   "share": 0.0298,
+   "wape": 0.1212,
+   "bias": -0.1212,
+   "direction": "under"
+  },
+  {
+   "sku": "HOM-1073",
+   "family": "Breakers",
+   "abc": "A",
+   "share": 0.0249,
+   "wape": 0.1157,
+   "bias": -0.1157,
+   "direction": "under"
+  },
+  {
+   "sku": "PWR-1151",
+   "family": "Meters",
+   "abc": "A",
+   "share": 0.0166,
+   "wape": 0.4684,
+   "bias": 0.4684,
+   "direction": "over"
+  },
+  {
+   "sku": "SEC-1056",
+   "family": "Breakers",
+   "abc": "A",
+   "share": 0.0162,
+   "wape": 0.3746,
+   "bias": 0.3746,
+   "direction": "over"
+  }
+ ]
+}
