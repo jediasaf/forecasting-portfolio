@@ -142,7 +142,7 @@ export default function Agent() {
           </div>
           <p className="text-[.68rem] leading-relaxed p-2.5" style={{ color: 'var(--color-muted)' }}>
             An LLM agent (<span className="mono">{trace?.model}</span>) that answers by calling
-            strict-schema tools over this site's backtest data — it never computes a number itself.
+            strict-schema tools over this site's backtest data. It never computes a number itself.
             These are recorded runs of the real agent, not a live endpoint.{' '}
             <a className="font-semibold underline" href="https://github.com/jediasaf/ask-the-forecast"
                target="_blank" rel="noreferrer">Repo & eval harness ↗</a>

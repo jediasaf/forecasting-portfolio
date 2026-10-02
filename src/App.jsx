@@ -1,7 +1,8 @@
-import { useState, lazy, Suspense } from 'react'
+import { useState, useEffect, lazy, Suspense } from 'react'
 import { motion } from 'motion/react'
 import { Hatch } from './ui.jsx'
 import Backtest from './Backtest.jsx'
+import Landing from './Landing.jsx'
 const Planning   = lazy(() => import('./Planning.jsx'))
 const Operations = lazy(() => import('./Operations.jsx'))
 const Fnb        = lazy(() => import('./Fnb.jsx'))
@@ -30,22 +31,23 @@ function Sidebar({ view, setView, open, close }) {
                   ${open ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}`}
       style={{ background: 'var(--color-ground)' }}>
       <div className="card h-full flex flex-col p-4">
-        <div className="flex items-center gap-2.5 px-1 pb-5">
+        <a href="#/" className="flex items-center gap-2.5 px-1 pb-5" aria-label="Back to the home page">
           <div className="w-8 h-8 rounded-xl flex items-center justify-center shrink-0"
                style={{ background: 'var(--color-brand-700)' }}>
             <span className="text-white font-extrabold text-[13px]">JT</span>
           </div>
           <div className="min-w-0">
             <div className="font-extrabold text-[.95rem] leading-tight truncate">Jedidiah</div>
-            <div className="card-sub truncate">Forecasting &amp; OR</div>
+            <div className="card-sub truncate">← Home</div>
           </div>
-        </div>
+        </a>
 
         <div className="navlabel px-2 pb-2">Dashboards</div>
         <nav className="flex flex-col gap-1 pl-3">
           {NAV.map(n => (
             <button key={n.k} data-on={view === n.k ? '1' : '0'} className="navitem"
-                    onClick={() => { setView(n.k); close() }}>
+                    onClick={() => { setView(n.k); close() }}
+                    aria-current={view === n.k ? 'page' : undefined}>
               <span className="text-[15px] leading-none opacity-70">{n.icon}</span>
               <span className="truncate flex-1">{n.label}</span>
               {n.badge && (
@@ -83,10 +85,25 @@ function Sidebar({ view, setView, open, close }) {
   )
 }
 
+/* '#/work/<view>' opens a dashboard; anything else is the landing page. Hash routing keeps
+   the site a static deploy and gives every dashboard a link a CV can point at. */
+const viewFromHash = () => {
+  const m = window.location.hash.match(/^#\/work\/([a-z]+)/)
+  return m && NAV.some(n => n.k === m[1]) ? m[1] : null
+}
+
 export default function App() {
-  const [view, setView] = useState('backtest')
+  const [view, setViewState] = useState(viewFromHash)
+  useEffect(() => {
+    const onHash = () => { setViewState(viewFromHash()); window.scrollTo(0, 0) }
+    window.addEventListener('hashchange', onHash)
+    return () => window.removeEventListener('hashchange', onHash)
+  }, [])
+  const setView = k => { window.location.hash = `#/work/${k}` }
   const [open, setOpen] = useState(false)
   const active = NAV.find(n => n.k === view)
+
+  if (!view) return <Landing />
 
   return (
     <div className="min-h-screen flex" style={{ background: 'var(--color-ground)' }}>
