@@ -36,8 +36,9 @@ Accuracy alone is close to meaningless without a baseline. Measured against seas
 | **Forecast value add** | **−5.7pp** |
 | Bias | −0.3% |
 
-**The model is beaten by the baseline on 5 of 7 departments.** It only earns its place on
-`HOBBIES_2` (**+10.6pp**) — the intermittent series where repeating last week is a poor guess.
+**The model is beaten by the baseline on 5 of 7 departments.** It earns its place on
+`HOBBIES_2` (**+10.6pp**), the intermittent series where repeating last week is a poor guess,
+and narrowly on `HOBBIES_1` (+2.8pp).
 
 The planning conclusion is not that the model is bad. It is that model and baseline should be
 selected per series, and that any accuracy figure quoted without a baseline beside it says little.

@@ -6,9 +6,10 @@ import fnb from './data/fnbHead.json'
 import agent from './data/agentStats.json'
 import foundry from './data/foundry.json'
 import ev from './data/ev.json'
+import { THUMBS } from './Thumbs.jsx'
 
 const nf = n => n.toLocaleString('en-SG')
-const hobbies = planningDepts.find(d => d.dept === 'HOBBIES_2')
+const winners = planningDepts.filter(d => d.fva > 0).sort((a, b) => b.fva - a.fva)
 
 /* Every number on a row is read from the same JSON the dashboard renders, so the
    landing page cannot drift from the work it points at. */
@@ -27,7 +28,7 @@ const PROJECTS = [
     topics: 'Forecast evaluation · bias · baseline selection',
     figure: `${planning.fva > 0 ? '+' : '−'}${Math.abs(planning.fva)}pp`,
     unit: 'value add over seasonal naive',
-    note: `Repeating last week beats the model on ${planning.total - planning.improved} of ${planning.total} departments. The model earns its place only on intermittent HOBBIES_2${hobbies ? `, at +${hobbies.fva}pp` : ''}.`,
+    note: `Repeating last week beats the model on ${planning.total - planning.improved} of ${planning.total} departments. It adds value only on ${winners.map(d => `${d.dept} (+${d.fva}pp)`).join(' and ')}.`,
   },
   {
     k: 'operations',
@@ -164,13 +165,15 @@ export default function Landing() {
       <section className="lp-wrap lp-projects" aria-labelledby="projects">
         <Label><span id="projects">Projects</span></Label>
         <ol className="lp-rows">
-          {PROJECTS.map((p, i) => (
+          {PROJECTS.map((p, i) => {
+            const Thumb = THUMBS[p.k]
+            return (
             <li key={p.k}>
               <a className="lp-row" href={`#/work/${p.k}`}>
                 <span className="lp-idx mono">{String(i + 1).padStart(2, '0')}</span>
                 <span className="lp-fig">
-                  <span className="lp-figure">{p.figure}</span>
-                  <span className="lp-unit">{p.unit}</span>
+                  <Thumb />
+                  <span className="lp-unit"><span className="lp-figure mono">{p.figure}</span> {p.unit}</span>
                 </span>
                 <span className="lp-body">
                   <span className="lp-title">{p.title}<span className="lp-arrow" aria-hidden>→</span></span>
@@ -179,7 +182,8 @@ export default function Landing() {
                 </span>
               </a>
             </li>
-          ))}
+            )
+          })}
         </ol>
         <p className="lp-aside">
           Also public: <a className="lp-link" href="https://github.com/jediasaf/forecast-accuracy-at-scale"
