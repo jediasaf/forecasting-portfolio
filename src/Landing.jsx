@@ -13,11 +13,18 @@ const nf = n => n.toLocaleString('en-SG')
 const winners = planningDepts.filter(d => d.fva > 0).sort((a, b) => b.fva - a.fva)
 
 /* Every number on a row is read from the same JSON the dashboard renders, so the
-   landing page cannot drift from the work it points at. */
+   landing page cannot drift from the work it points at.
+
+   Titles name the industry first and then the question in plain words, because
+   the person reading this page is deciding whether the work is relevant before
+   they decide whether it is clever. The method belongs on the Topics line
+   directly underneath, where a technical reader looks for it: backtesting,
+   value add, ontologies and mixed-integer programming are all still named,
+   just not in the one line that has to land on everybody. */
 const PROJECTS = [
   {
     k: 'backtest',
-    title: 'Backtesting Retail Demand Forecasts',
+    title: 'Retail Sales: Testing a Demand Forecast Against What Actually Sold',
     topics: 'Time series · Prophet · Elastic Net · walk-forward validation',
     figure: `${headline.prophetWape}%`,
     unit: 'WAPE, daily Prophet',
@@ -25,7 +32,7 @@ const PROJECTS = [
   },
   {
     k: 'planning',
-    title: 'Measuring Forecast Value Add Against a Naive Baseline',
+    title: 'Retail Planning: Does the Forecast Beat Simply Repeating Last Week?',
     topics: 'Forecast evaluation · bias · baseline selection',
     figure: `${planning.fva > 0 ? '+' : '−'}${Math.abs(planning.fva)}pp`,
     unit: 'value add over seasonal naive',
@@ -33,7 +40,7 @@ const PROJECTS = [
   },
   {
     k: 'operations',
-    title: 'Analysing Airport Capacity Utilisation',
+    title: 'Airports: How Many Seats Fly Empty, and When',
     topics: 'Operations analytics · load factor · seasonality',
     figure: `${(ops.empty / 1e6).toFixed(1)}M`,
     unit: `empty seats flown, ${ops.year}`,
@@ -41,7 +48,7 @@ const PROJECTS = [
   },
   {
     k: 'fnb',
-    title: 'Analysing Restaurant Trading Patterns',
+    title: 'Restaurants: Which Days of the Week Carry the Trade',
     topics: 'Point-of-sale analytics · indexing · day-of-week demand',
     figure: `${Math.round(fnb.peakIdx)} : ${Math.round(fnb.troughIdx)}`,
     unit: `${fnb.peakDay} against ${fnb.troughDay}, indexed`,
@@ -49,7 +56,7 @@ const PROJECTS = [
   },
   {
     k: 'agent',
-    title: 'Answering Forecast Questions with an LLM Agent',
+    title: 'Demand Planning: Answering Forecast Questions in Plain English',
     topics: 'Tool calling · evaluation · Anthropic API',
     figure: agent.hardPass,
     unit: `hard questions, baseline ${agent.baselinePass}`,
@@ -57,7 +64,7 @@ const PROJECTS = [
   },
   {
     k: 'foundry',
-    title: 'Diagnosing Forecast Error with a Foundry Ontology',
+    title: 'Supply Chain: Tracing Where Forecast Error Comes From',
     topics: 'Ontology design · PySpark · error attribution',
     figure: nf(foundry.summary.zero_demand_rows),
     unit: `of ${nf(foundry.summary.total_rows_lag1)} rows MAPE silently drops`,
@@ -65,7 +72,7 @@ const PROJECTS = [
   },
   {
     k: 'evsiting',
-    title: 'Siting EV Chargers with Mixed-Integer Programming',
+    title: 'EV Charging: Where Singapore Should Put the Next Chargers',
     topics: 'Optimisation · PuLP · demand forecasting',
     figure: String(ev.summary.sites_selected),
     unit: `sites chosen from ${nf(ev.summary.candidate_carparks)} HDB carparks`,
@@ -74,7 +81,7 @@ const PROJECTS = [
   {
     k: 'ecotwin',
     href: 'https://jediasaf.github.io/BMSEMS-Demo/',
-    title: 'Clearing a Transformer Overload with a Verified Dispatch',
+    title: 'Buildings and the Power Grid: Clearing an Overloaded Transformer',
     topics: 'Building and power operations \u00b7 LightGBM \u00b7 CVXPY \u00b7 pandapower \u00b7 RC zone simulation',
     figure: `\u2212${(ecotwin.network.loading_before_pct - ecotwin.network.loading_after_pct).toFixed(1)}pp`,
     unit: `transformer loading, ${ecotwin.network.loading_before_pct.toFixed(1)}% to ${ecotwin.network.loading_after_pct.toFixed(1)}%`,
@@ -181,6 +188,12 @@ export default function Landing() {
             // exception is hosted elsewhere, so it opens in a new tab rather
             // than pretending to be a route that does not exist here.
             const ext = Boolean(p.href)
+            // Longer titles wrap, and a wrapped title used to drop its arrow
+            // onto a line of its own. The last word carries the arrow instead,
+            // so the two break together or not at all.
+            const words = p.title.split(' ')
+            const lead = words.slice(0, -1).join(' ')
+            const tail = words[words.length - 1]
             return (
             <li key={p.k}>
               <a className="lp-row" href={ext ? p.href : `#/work/${p.k}`}
@@ -191,8 +204,10 @@ export default function Landing() {
                   <span className="lp-unit"><span className="lp-figure mono">{p.figure}</span> {p.unit}</span>
                 </span>
                 <span className="lp-body">
-                  <span className="lp-title">{p.title}
-                    <span className="lp-arrow" aria-hidden>{ext ? '↗' : '→'}</span>
+                  <span className="lp-title">{lead ? `${lead} ` : ''}
+                    <span className="lp-nowrap">{tail}
+                      <span className="lp-arrow" aria-hidden>{ext ? '↗' : '→'}</span>
+                    </span>
                     {ext && <span className="lp-sr">(opens in a new tab)</span>}
                   </span>
                   <span className="lp-topics">Topics: {p.topics}</span>

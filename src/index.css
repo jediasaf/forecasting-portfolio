@@ -170,6 +170,7 @@ table.grid tbody tr[data-sel="1"] { background: var(--color-brand-100); }
 .lp-body { display: flex; flex-direction: column; gap: .35rem; }
 .lp-title { font-size: var(--step-1); font-weight: 700; line-height: 1.25; letter-spacing: -.01em; }
 .lp-arrow { display: inline-block; margin-left: .5rem; color: var(--color-brand-500); transition: transform .18s ease-out; }
+.lp-nowrap { white-space: nowrap; }
 /* The one project row that leaves the site says so to a screen reader; the
    arrow glyph that says it visually is aria-hidden. */
 .lp-sr {

@@ -28,18 +28,24 @@ The landing page, top to bottom, with density changing on purpose:
 
 | Dashboard | Title | Topics | Number on the row |
 |---|---|---|---|
-| Backtest | Backtesting Retail Demand Forecasts | Time series, Prophet, Elastic Net, walk-forward validation | 20.52% WAPE, daily Prophet, Walmart M5 |
-| Value add | Measuring Forecast Value Add Against a Naive Baseline | Forecast evaluation, bias, baseline selection | −5.7pp: the baseline wins on 5 of 7 departments |
-| Operations | Analysing Airport Capacity Utilisation | Operations analytics, load factor, seasonality | 31.9M empty seats flown, 54.2% load factor |
-| F&B | Analysing Restaurant Trading Patterns | Point-of-sale analytics, indexing, day-of-week demand | Friday at 141 against Monday at 79 (indexed) |
-| Agent | Answering Forecast Questions with an LLM Agent | Tool calling, evaluation, Anthropic API | 14/14 on the hard set, against 6/14 without tools |
-| Foundry | Diagnosing Forecast Error with a Foundry Ontology | Ontology design, PySpark, error attribution | MAPE undefined on 1,784 of 17,240 rows |
-| EV siting | Siting EV Chargers with Mixed-Integer Programming | Optimisation, PuLP, demand forecasting | 26 sites from 2,265 carparks |
+| Backtest | Retail Sales: Testing a Demand Forecast Against What Actually Sold | Time series, Prophet, Elastic Net, walk-forward validation | 20.52% WAPE, daily Prophet, Walmart M5 |
+| Value add | Retail Planning: Does the Forecast Beat Simply Repeating Last Week? | Forecast evaluation, bias, baseline selection | −5.7pp: the baseline wins on 5 of 7 departments |
+| Operations | Airports: How Many Seats Fly Empty, and When | Operations analytics, load factor, seasonality | 31.9M empty seats flown, 54.2% load factor |
+| F&B | Restaurants: Which Days of the Week Carry the Trade | Point-of-sale analytics, indexing, day-of-week demand | Friday at 141 against Monday at 79 (indexed) |
+| Agent | Demand Planning: Answering Forecast Questions in Plain English | Tool calling, evaluation, Anthropic API | 14/14 on the hard set, against 6/14 without tools |
+| Foundry | Supply Chain: Tracing Where Forecast Error Comes From | Ontology design, PySpark, error attribution | MAPE undefined on 1,784 of 17,240 rows |
+| EV siting | EV Charging: Where Singapore Should Put the Next Chargers | Optimisation, PuLP, demand forecasting | 26 sites from 2,265 carparks |
 
 Every number above is already on the live site. Nothing new is claimed.
 
-Added after this plan: an eighth row, **Clearing a Transformer Overload with a Verified
-Dispatch**, at −43.4pp of transformer loading. It is the one row that does not open a dashboard
+Titles rewritten later: each one now names the industry first and then asks the question in
+plain words, because a reader decides whether the work is relevant before deciding whether it
+is clever. Nothing was dropped, it moved: backtesting, forecast value add, the Foundry ontology
+and mixed-integer programming are all still named on the Topics line directly underneath, which
+is where a technical reader looks for them.
+
+Added after this plan: an eighth row, **Buildings and the Power Grid: Clearing an Overloaded
+Transformer**, at −43.4pp of transformer loading. It is the one row that does not open a dashboard
 in this app: the demo is hosted separately at https://jediasaf.github.io/BMSEMS-Demo/, so the
 row opens in a new tab. Its figures are read from `src/data/ecotwin.json`, extracted from that
 demo's own published recording, on the same rule as every other row: the landing page cannot
