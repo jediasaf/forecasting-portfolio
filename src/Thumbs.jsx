@@ -5,6 +5,7 @@ import fnbDow from './data/fnbDow.json'
 import traces from './data/agentTraces.json'
 import foundry from './data/foundry.json'
 import ev from './data/ev.json'
+import ecotwin from './data/ecotwin.json'
 
 /* Each project's thumbnail is drawn from that project's own data, with the finding
    picked out in the accent. They are small charts, not illustrations. */
@@ -139,7 +140,22 @@ function EvSiting() {
   )
 }
 
+function Ecotwin() {
+  const d = ecotwin.dispatch
+  const ys = [...d.baseline_kw, ...d.optimised_kw, d.cap_kw]
+  const x = lin(0, d.baseline_kw.length - 1, 4, W - 4)
+  const y = lin(Math.min(...ys), Math.max(...ys), H - 10, 10)
+  const cap = y(d.cap_kw)
+  return (
+    <Frame label={`Facility demand over twelve hours: the measured profile crosses the ${d.cap_kw} kW transformer limit while the optimised dispatch stays under it.`}>
+      <line x1="4" x2={W - 4} y1={cap} y2={cap} stroke={BAD} strokeWidth="1.2" strokeDasharray="4 3" opacity=".8" />
+      <path d={path(d.baseline_kw.map((v, i) => [x(i), y(v)]))} fill="none" stroke={MUTED} strokeWidth="1.4" opacity=".65" />
+      <path d={path(d.optimised_kw.map((v, i) => [x(i), y(v)]))} fill="none" stroke={ACC_D} strokeWidth="2.2" />
+    </Frame>
+  )
+}
+
 export const THUMBS = {
   backtest: Backtest, planning: Planning, operations: Operations, fnb: Fnb,
-  agent: Agent, foundry: Foundry, evsiting: EvSiting,
+  agent: Agent, foundry: Foundry, evsiting: EvSiting, ecotwin: Ecotwin,
 }

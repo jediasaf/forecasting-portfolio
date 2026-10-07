@@ -6,6 +6,7 @@ import fnb from './data/fnbHead.json'
 import agent from './data/agentStats.json'
 import foundry from './data/foundry.json'
 import ev from './data/ev.json'
+import ecotwin from './data/ecotwin.json'
 import { THUMBS } from './Thumbs.jsx'
 
 const nf = n => n.toLocaleString('en-SG')
@@ -69,6 +70,15 @@ const PROJECTS = [
     figure: String(ev.summary.sites_selected),
     unit: `sites chosen from ${nf(ev.summary.candidate_carparks)} HDB carparks`,
     note: 'A binary program per planning area, trading coverage gap against spread. The area with the worst gap gets nothing, because it has no HDB carparks to choose from. Group coursework.',
+  },
+  {
+    k: 'ecotwin',
+    href: 'https://jediasaf.github.io/BMSEMS-Demo/',
+    title: 'Clearing a Transformer Overload with a Verified Dispatch',
+    topics: 'Building and power operations \u00b7 LightGBM \u00b7 CVXPY \u00b7 pandapower \u00b7 RC zone simulation',
+    figure: `\u2212${(ecotwin.network.loading_before_pct - ecotwin.network.loading_after_pct).toFixed(1)}pp`,
+    unit: `transformer loading, ${ecotwin.network.loading_before_pct.toFixed(1)}% to ${ecotwin.network.loading_after_pct.toFixed(1)}%`,
+    note: `Public Schneider Electric dataset, ${ecotwin.catalogue.sites_served} buildings. The dispatch shifts ${nf(Math.round(ecotwin.dispatch.ev_energy_shifted_kwh))} kWh of EV charging and is then checked by a load flow, which refuses it on ${ecotwin.network.rejected_cursors} of ${ecotwin.network.over_nameplate_cursors} over-nameplate replay positions. On the building side a simulated setpoint change cuts energy ${Math.abs(ecotwin.building.energy_pct).toFixed(1)}% on site ${ecotwin.building.site_id} and is refused outright on the largest site. The hosted link is a recording of a live run, and says so.`,
   },
 ]
 
@@ -167,16 +177,24 @@ export default function Landing() {
         <ol className="lp-rows">
           {PROJECTS.map((p, i) => {
             const Thumb = THUMBS[p.k]
+            // Every row but one opens its own dashboard in this app. The
+            // exception is hosted elsewhere, so it opens in a new tab rather
+            // than pretending to be a route that does not exist here.
+            const ext = Boolean(p.href)
             return (
             <li key={p.k}>
-              <a className="lp-row" href={`#/work/${p.k}`}>
+              <a className="lp-row" href={ext ? p.href : `#/work/${p.k}`}
+                 {...(ext ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
                 <span className="lp-idx mono">{String(i + 1).padStart(2, '0')}</span>
                 <span className="lp-fig">
                   <Thumb />
                   <span className="lp-unit"><span className="lp-figure mono">{p.figure}</span> {p.unit}</span>
                 </span>
                 <span className="lp-body">
-                  <span className="lp-title">{p.title}<span className="lp-arrow" aria-hidden>→</span></span>
+                  <span className="lp-title">{p.title}
+                    <span className="lp-arrow" aria-hidden>{ext ? '↗' : '→'}</span>
+                    {ext && <span className="lp-sr">(opens in a new tab)</span>}
+                  </span>
                   <span className="lp-topics">Topics: {p.topics}</span>
                   <span className="lp-note">{p.note}</span>
                 </span>

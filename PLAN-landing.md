@@ -15,7 +15,7 @@ The landing page, top to bottom, with density changing on purpose:
 
 1. **Header, quiet.** Name, one-line statement, availability line, contact links (email,
    LinkedIn, GitHub). Photo small and to the right, not centred, once supplied.
-2. **Projects, the one large moment.** Seven rows, not cards. Each row has the project title
+2. **Projects, the one large moment.** Eight rows, not cards. Each row has the project title
    (Ulysses-style), a Topics line, and the one number that matters, set large in a serif, with
    the caveat the dashboard already states beside it. Each row links into its dashboard.
 3. **Experience, dense.** A date-column spine in reverse chronological order, using the locked
@@ -38,6 +38,13 @@ The landing page, top to bottom, with density changing on purpose:
 
 Every number above is already on the live site. Nothing new is claimed.
 
+Added after this plan: an eighth row, **Clearing a Transformer Overload with a Verified
+Dispatch**, at −43.4pp of transformer loading. It is the one row that does not open a dashboard
+in this app: the demo is hosted separately at https://jediasaf.github.io/BMSEMS-Demo/, so the
+row opens in a new tab. Its figures are read from `src/data/ecotwin.json`, extracted from that
+demo's own published recording, on the same rule as every other row: the landing page cannot
+state a number the work itself does not.
+
 ## Design
 
 - Keep the site's own identity: green palette, Plus Jakarta Sans, IBM Plex Mono. The kit says
@@ -52,7 +59,7 @@ Every number above is already on the live site. Nothing new is claimed.
 
 ## Also fixed in passing
 
-- `index.html` meta and Open Graph text still say "Four dashboards". There are seven.
+- `index.html` meta and Open Graph text still say "Four dashboards". There are eight.
 - The sidebar gets a link back to the landing page.
 
 ## Copy rules
